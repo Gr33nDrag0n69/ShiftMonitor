@@ -14,13 +14,13 @@ If you like it, please vote for me on Shift MainNet for Delegate or I accept don
 
 Delegate: Gr33nDrag0n / Address: 17688865274499765764S
 
-###**Installation**
+##**Installation**
 
 Save a copy of ShiftMonitor.ps1
 
 This README use this path C:\Scripts\ShiftMonitor.ps1, adjust accordingly if you use something else.
 
-###**Configuration, Manual Usage & Testing**
+##**Configuration, Manual Usage & Testing**
 
 Open the script in your favorite text editor. Basic Notepad WILL work but not recommended. I recommend notepad++ available for free [HERE](https://notepad-plus-plus.org/).
 
@@ -34,7 +34,7 @@ The configuration is splitted in sub-sections:
  - E-mail
  - MainNet
 
-#### **Configuring E-mail Section**
+### **Configuring E-mail Section**
 
 In this section we will configure the address used to send and received the monitoring automatic e-mails.
 
@@ -45,7 +45,7 @@ SenderSmtp       | This is the domain or IP address the script will use as SMTP 
 SendErrorMail    | Enable/Disable the sending of errors messages.                                 | = $True
 ErrorEmailList   | E-mail List                                                                    | = @('home@mydomain.com', '1234567890@phoneprovider.com')
  
-####_About EmailList_
+###_About EmailList_
 
 1 entry example:
 > @('email@domain.com')
@@ -55,7 +55,7 @@ Multi-entries example:
 
 You can use the same address for sender and recipient if you want.
 
-####_About "email2sms"_
+###_About "email2sms"_
 Most phone provider have email2sms functionnality. Just check with your provider, you probably already have an addres looking like:
 > 9995551212@YourPhoneProvider.com
 
@@ -74,13 +74,13 @@ Some existings eaxamples:
 * Alltel – cellnumber@message.alltel.com
 
  
-####**Configuring MainNet Section**
+###**Configuring MainNet Section**
 
 Start by entering your Delegate and Address. There is a function later to get the public key.
 
 Edit the nodes section to add the http address of all your nodes.
 
-# Retreive Public Key
+#### Retreive Public Key
 
 `.\ShiftMonitor.ps1 -ShowPublicKey`
 
@@ -88,19 +88,19 @@ Edit the nodes section to add the http address of all your nodes.
 
 Edit the script again to add the public key in the Delegate configuration.
 
-# Test E-mail Configuration
+#### Test E-mail Configuration
 
 `.\ShiftMonitor.ps1 -SendTestEmail`
 
 ![##Images_README_Header##](./PNG/SendTestEmail.png)
 
-# Run manually the check
+#### Run manually the check
 
 `.\ShiftMonitor.ps1 -ShowMessage`
 
 ![##Images_README_Header##](./PNG/ShowMessage.png)
 
-###**Scheduled Task(s) Creation & Testing**
+##**Scheduled Task(s) Creation & Testing**
 
 The script do a check and send e-mail if necessary.
 
@@ -122,7 +122,7 @@ Action  -> New
 			* Arguments:        C:\Scripts\ShiftMonitor.ps1
 			* WorkingDirectory: C:\Scripts\
 
-###**Troubleshooting & Common Error(s)**
+##**Troubleshooting & Common Error(s)**
 
 **It doesn’t work.**
 
