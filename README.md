@@ -109,6 +109,7 @@ It's not a program, so like you would use crontab in Linux, you need to use Task
 Open Task Scheduler and Create a New Task. (Use Full GUI not the Wizard)
 
 General -> Name: ShiftMonitor
+
 General -> Execute even if user is not connected
 
 Trigger -> New
